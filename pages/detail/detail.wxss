@@ -1,0 +1,7 @@
+/* pages/detail/detail.wxss */
+
+.live-stock-data > view, .botton-box-data view{
+    margin: 20rpx;
+}
+
+

@@ -1,0 +1,22 @@
+<!--pages/user/user.wxml-->
+<view>
+    <!-- 上面 -->
+    <view class="user-box">
+        <view class="user-info">
+            <image style="height: 130rpx; width: 130rpx;" mode="cover" src="{{userInfo.route}}"></image>
+            {{userInfo.username}}
+        </view>
+    </view>
+
+    <!-- 下面 -->
+    <view>
+        <view class="message-button">
+           <view>
+            <button type="default" bindtap="goAdd">新增禽畜</button>
+            <button type="default" bindtap="goMessagePage">禽畜消息</button>
+            <button type="default" bindtap="addData">新增设配</button>
+            <button type="default" bindtap="outLog">退出登录</button>
+           </view>
+        </view>
+    </view>
+</view>

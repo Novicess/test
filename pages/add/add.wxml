@@ -1,0 +1,55 @@
+添加禽畜
+<view>
+    <view class="form-class">
+        <!-- 年龄 -->
+        <view class="flex-class">
+            <view>年龄:</view>
+            <input bindinput="setAge" type="number" placeholder="请输入禽畜的年龄" />
+        </view>
+        <!-- 性别 -->
+        <view class="flex-class">
+        <view>性别:</view>
+            <radio-group bindchange="radioChange">
+                <label class="radio">
+                    <radio value="公" name="sex" />公
+                </label>
+                <label class="radio" style="margin-left: 50rpx;">
+                    <radio name="sex" value="母" />母
+                </label>
+            </radio-group>
+        </view>
+        <!-- 种类 -->
+        <view class="flex-class">
+        <view>种类： </view>
+            <picker mode="selector" bindchange="bindPickerChange"  
+                value="{{index}}"
+                range="{{typeList}}">
+                {{typeList[index]}}
+            </picker>
+        </view>
+        <view class="flex-class">
+            <view>当前体重 :</view>
+            <view>
+                <input bindinput="setweight" type="number" placeholder="请输入禽畜的体重" />
+            </view>
+           
+        </view>
+        
+        <view class="flex-class"> 
+            <view>
+                佩戴的设配:
+            </view>
+            <view>
+                <picker mode="selector" bindchange="setMachine"  
+                value="{{machineIndex}}"
+                range="{{machineNameList}}" 
+               >    
+                {{machineNameList[machineIndex]}}
+            </picker>
+            </view>
+        </view>
+       <button bindtap="save" style="margin-top: 50rpx;" type="primary">上传</button>
+    </view>
+
+
+</view>
