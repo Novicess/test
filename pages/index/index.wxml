@@ -1,9 +1,0 @@
-<!-- 展示所有禽畜的位置 -->
-<map 
-  class="live-stock-map"
-  latitude="{{latitude}}"
-  longitude="{{longitude}}"
-  markers="{{markers}}"
-  circles="{{circles}}"
->
-</map>

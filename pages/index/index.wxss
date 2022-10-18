@@ -1,5 +1,0 @@
-/**index.wxss**/
-.live-stock-map{
-  width: 100vw;
-  height: 100vh;
-}
